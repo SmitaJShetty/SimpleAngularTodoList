@@ -1,0 +1,39 @@
+﻿#ListBody {
+  
+    width: 500px;
+    text-wrap: normal;
+    border-image: url('../Images/reddiamond.png') 30 round;
+    border: 10px solid transparent;
+}
+
+        .Done {
+            background-color:lightgray;
+            font-style:italic ;
+            text-decoration:line-through;      
+            transition: ease-out opacity 2s linear;                              
+        }
+
+        .itemlistCls {
+            table-layout:fixed;
+            width: 400px;
+            height: 30px;
+            background-color:azure;
+            overflow-wrap: normal;
+        }
+
+            .itemlistCls  span {
+                text-align:right;     
+            }
+
+        .itemDescCls {
+             width: 200px;
+             text-wrap:normal;
+            text-align:left;
+            background-color:azure;
+        }
+
+
+        .itemDescCls:hover {
+             font-size:large;          
+             transition: width 2s;
+        }        

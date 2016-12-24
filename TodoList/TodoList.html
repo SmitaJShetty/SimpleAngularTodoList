@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+    <title></title>
+</head>
+<body ng-controller="MainController as Ctrl">   
+    <style>
+    
+    </style>
+    <div class="ListBody" >
+        <table class="itemlistCls" ng-repeat="item in Ctrl.getList() | orderBy:'-Done'">
+            <tr ng-class="Ctrl.getClass(item.Done)">
+                <td style="width:100px"><span ng-bind="item.Name"></span></td>
+                <td style="width:100px"> <span ng-bind="item.Desc"></span> </td>
+                <td style="width:20px">
+                    <span>  <input type="checkbox" ng-model="item.Done" ng-checked="Ctrl.Item.Done" /></span>
+                </td>
+                <td style="width:20px"><img ng-click="Ctrl.delItem(item)" src="Images/DeleteIcon.png" width="25" height="25" /></td>
+            </tr>
+        </table>
+    </div>
+    <form ng-submit="Ctrl.AddNew()">
+        <input type="text" placeholder="Name" ng-model="Ctrl.item.Name">
+        <input type="text" placeholder="Description" ng-model="Ctrl.item.Desc">
+        <input type="checkbox" ng-model="Ctrl.item.Done" value="false"/>
+        <input type="submit" value="Add New" >
+    </form> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
+    </script>
+    <script  type="text/javascript" src="Scripts/Todolist.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="../Styles/TodoListsStyles.css" />
+</body>
+</html>

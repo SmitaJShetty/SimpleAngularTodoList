@@ -1,0 +1,5 @@
+C:\D Drive\Test Projects\AngularJSTest\TodoList\bin\TodoList.dll.config
+C:\D Drive\Test Projects\AngularJSTest\TodoList\bin\TodoList.dll
+C:\D Drive\Test Projects\AngularJSTest\TodoList\bin\TodoList.pdb
+C:\D Drive\Test Projects\AngularJSTest\TodoList\obj\Debug\TodoList.dll
+C:\D Drive\Test Projects\AngularJSTest\TodoList\obj\Debug\TodoList.pdb
